@@ -1,0 +1,59 @@
+.form{
+    width: 300px;
+   
+    height: 550px;
+    padding-top: 3%;
+   margin-left: 20px;
+   /* background:rgba(31, 29, 29, 0.5) ; */
+}
+.form-control{
+    margin-bottom: 9%;
+}
+input{
+    top: 2px;
+    padding: 5px;
+    
+}
+span{
+    
+
+    margin-left: 12px;
+}
+.btn{
+    margin-left: 30px;
+    background-color: palevioletred;
+}
+.container{
+    position: absolute;
+    top: 15px;
+    height: 20px;
+    width: 300px;
+    
+}
+.summary{
+    position: absolute;
+    top: 15px;
+    margin-left: 900px;
+    height: 20px;
+    width: 300px;
+    
+
+}
+p{
+    font-weight: bold;
+    color:black;
+}
+h2{
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 8%;
+    margin-bottom: 10%;
+}
+input[type="text"],input[type="password"],input[type="number"]
+{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    color:white;
+}

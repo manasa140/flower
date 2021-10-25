@@ -1,0 +1,63 @@
+<html>
+  <head>
+<style>
+  body { 
+              background-image: url('../assets/images/img4.jpg');
+              background-repeat: no-repeat;
+              background-attachment: fixed;
+              background-size: cover;
+            }
+</style>
+  </head>
+  <body>
+    <div class="form">
+      <div >
+        <form [formGroup]="myForm" (ngSubmit)="AddFlower()">  
+          <h2> ADD FLOWERS</h2>
+          <!-- <label class="form-control">Bouquet Id</label>
+          <input type="number" class="form-control" [(ngModel)]="flower.id" [formControl]="bid" >
+          <span *ngIf="bid.valid==false && bid.touched" class="alert alert-danger">
+              Bouqet Id cannot be empty
+          </span> -->
+          <p>
+            Bouquet Name
+          </p>
+          <!-- <label class="form-control">Bouquet Name</label> -->
+          <input type="text" class="form-control" [(ngModel)]="flower.name" [formControl]="name">
+          <span *ngIf="name.valid==false && name.touched" class="alert alert-danger">
+            Name cannot be empty
+        </span>
+        <p>
+          Bouquet Description
+        </p>
+          <!-- <label class="form-control">Bouquet Description</label> -->
+          <input type="text" class="form-control" [(ngModel)]="flower.description" [formControl]="desc">
+          <span *ngIf="desc.valid==false && desc.touched" class="alert alert-danger">
+            Description cannot be empty
+        </span>
+        <p>
+          Bouquet Price
+
+        </p>
+          <!-- <label class="form-control">Bouquet Price</label> -->
+          <input type="number" class="form-control" [(ngModel)]="flower.price" [formControl]="price">
+          <span *ngIf="price.valid==false && price.touched" class="alert alert-danger">
+            Price cannot be empty
+        </span>
+        <p>
+          Bouquet Quantity
+        </p>
+          <!-- <label class="form-control">Bouquet Quantity</label> -->
+          <input type="number" class="form-control" [(ngModel)]="flower.qty" [formControl]="quant">
+          <span *ngIf="quant.valid==false && quant.touched" class="alert alert-danger">
+            Quantity cannot be empty
+        </span>
+         <span> <button class="btn btn-primary" >Add Flower</button> </span>
+         <span class="btn"> <button class="btn btn-danger" >Reset</button> </span>
+        </form>
+      </div>
+      </div>
+  </body>
+</html>
+
+

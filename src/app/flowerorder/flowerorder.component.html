@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <style>
+            body { 
+                        background-image: url('../assets/images/img5.jpg');
+                        background-repeat: no-repeat;
+                        background-attachment: fixed;
+                        background-size: cover;
+                      }
+          </style>
+    </head>
+
+<body>
+<div class="container" >  
+    <h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">FLOWERS</h1>
+   
+    <div class="alert alert-info" *ngFor = "let flower of flowerss">
+                <!-- <div *ngIf="flower.available ; else elseBlock"> -->
+                Flower Id : {{flower.id}}
+                <br/>
+                Flower Name : {{flower.name}}
+                 <br/>
+                 Flower Description : {{flower.description}} 
+                <br/>
+                Flower Price : {{flower.price}}
+                <br/>
+                Flower Quantity : {{ flower.qty}}
+                <br/>
+                
+                <button  (click)="AddFlowers(flower)">ORDER</button> 
+        <!-- </div> -->
+    </div>
+
+   
+    <ng-template #elseBlock>Out of stock</ng-template>
+</div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+
+<html>
+    <head>
+        <style>
+            body { 
+              background-image: url('../assets/images/login.jpg');
+              background-repeat: no-repeat;
+              background-attachment: fixed;
+              background-size: cover;
+            }
+        </style> 
+    
+    </head>
+    <body>
+        <div class="container">
+            <span class="form"> 
+             <div>
+                 <form [formGroup]="myForm" (ngSubmit)="register()"> 
+                 <!-- <label class="form-control">ID</label> -->
+                 <h1> LOGIN </h1>
+                 <p> User-ID</p>
+                 <input type="text" class="form-control"   [(ngModel)]="user.id"  [formControl]="id" placeholder="User_ID">
+                 <span *ngIf="id.valid==false && id.touched" class="alert alert-danger">
+                     Id cannot be empty
+                 </span>
+                 <!-- <label class="form-control">Password</label> -->
+                 <p> Password</p>
+                 <input type="password" class="form-control" [(ngModel)]="user.password" [formControl]="pass" placeholder="Password">
+                 <span *ngIf="pass.valid==false && pass.touched" class="alert alert-danger">
+                     password cannot be empty
+                 </span>
+        
+                 <button class="btn btn-success" >Login</button>
+             </form>
+             </div>
+         </span>
+         
+         </div>
+    </body>
+</html>
+<!-- <div class="container">
+    <span class="form"> 
+     <div class="alert alert-success">
+         <form [formGroup]="myForm" (ngSubmit)="register()"> 
+         <label class="form-control">ID</label>
+         <input type="text" class="form-control"   [(ngModel)]="user.id"  [formControl]="id" >
+         <span *ngIf="id.valid==false && id.touched" class="alert alert-danger">
+             Id cannot be empty
+         </span>
+         <label class="form-control">Password</label>
+         <input type="password" class="form-control" [(ngModel)]="user.password" [formControl]="pass" >
+         <span *ngIf="pass.valid==false && pass.touched" class="alert alert-danger">
+             password cannot be empty
+         </span>
+
+         <button class="btn btn-success" >Register</button>
+     </form>
+     </div>
+ </span>
+ 
+ </div> -->

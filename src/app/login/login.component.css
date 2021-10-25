@@ -1,0 +1,60 @@
+.container{
+    padding-top: 9%;
+    width: 300px;
+    height: 550px;
+    /* background:  rgba(0,0,0,0.5); */
+    margin-left: 20px;
+    
+   
+   
+    
+}
+.form{
+    width: 150px;
+    height: 150px;
+   
+}
+.form-control{
+    margin-bottom: 6%;    
+} 
+.div.alert alert-success{
+    margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+button{
+    width: 265px;
+    color: white;
+    background:palevioletred
+}
+ p{
+    font-weight: bold;
+    color:rgb(13, 13, 14);
+}
+h1{
+    color: rgb(14, 13, 13);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 25%;
+   
+}
+input[type="text"],input[type="password"]
+{
+    
+    background : transparent;
+    outline: none;
+    height: 40px;
+    font-size: 16px;
+    color: white;
+    
+   
+}
+/* body{
+    background-color:red;
+    background-image: url(" ../../assets/images/pexels-photo-414660.jpeg"); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+} */
+
+
+ 
